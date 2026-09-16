@@ -151,3 +151,12 @@ body.lightbox-open{overflow:hidden;}
   .lightbox-next{right:20px;}
   .lightbox-count{bottom:31px;}
 }
+
+/* MDC Soccer: clean, aligned gallery */
+.soccer-page .soccer-hero{max-width:1180px;margin:0 auto 34px;aspect-ratio:16/9;overflow:hidden;}
+.soccer-page .soccer-hero .photo,.soccer-page .soccer-hero img{width:100%;height:100%;}
+.soccer-page .soccer-hero img{object-fit:cover;object-position:center;}
+.soccer-page .soccer-even-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;max-width:1180px;margin:46px auto 0;align-items:stretch;}
+.soccer-page .soccer-even-grid .photo{width:100%;aspect-ratio:4/5;overflow:hidden;}
+.soccer-page .soccer-even-grid .photo img{width:100%;height:100%;object-fit:cover;object-position:center;}
+@media(max-width:800px){.soccer-page .soccer-even-grid{grid-template-columns:1fr;gap:18px}.soccer-page .soccer-even-grid .photo{aspect-ratio:4/5}.soccer-page .soccer-hero{aspect-ratio:4/3}}
